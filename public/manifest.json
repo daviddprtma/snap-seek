@@ -22,38 +22,7 @@
       "type": "svg+xml"
     }
   ],
-  "screenshots": [
-    {
-      "src": "screenshots/mobile-screenshot-1.png",
-      "sizes": "750x1334",
-      "type": "image/png",
-      "form_factor": "narrow"
-    },
-    {
-      "src": "screenshots/mobile-screenshot-2.png",
-      "sizes": "750x1334",
-      "type": "image/png",
-      "form_factor": "narrow"
-    },
-    {
-      "src": "screenshots/mobile-screenshot-3.png",
-      "sizes": "750x1334",
-      "type": "image/png",
-      "form_factor": "narrow"
-    },
-    {
-      "src": "screenshots/pc-screenshot-1.png",
-      "sizes": "2048x1640",
-      "type": "image/png",
-      "form_factor": "wide"
-    },
-    {
-      "src": "screenshots/pc-screenshot-2.png",
-      "sizes": "2048x1640",
-      "type": "image/png",
-      "form_factor": "wide"
-    }
-  ],
+
   "theme_color": "#FFFFFF",
   "background_color": "#FFFFFF",
   "start_url": ".",
