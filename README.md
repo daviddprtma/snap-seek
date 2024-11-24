@@ -13,7 +13,7 @@ A versatile visual search assistant bot to integrate text, image, and voice inte
 </p>
 </div>
 
-## About The Project
+## Why SnapSeek✅?
 
 ![Product Screenshot](https://github.com/daviddprtma/snap-seek/blob/0253e00e8c1f37fc05b07eaa291db88da1cc2d26/public/snapseek.png)
 
