@@ -19,7 +19,7 @@ A versatile visual search assistant bot to integrate text, image, and voice inte
 
 SnapSeek is an application visual search assistant to deploy your private Gemini application for free with one click, supporting Gemini 1.5 Pro, Gemini 1.5 Flash, Gemini Pro, and Gemini Pro Vision models.
 
-It includes a straightforward interface supporting image recognition and voice conversations. And also a cross-platform application client with a persistent menu bar for enhanced stackie productivity🙌.
+It includes a straightforward interface supporting image recognition and voice conversations. And also a cross-platform application client with a persistent menu bar for enhanced user productivity🙌.
 
 ## Features
 - **One-Click Free Deployment** on Vercel in under 1 minute.
