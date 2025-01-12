@@ -50,7 +50,7 @@ interface AnswerParams {
 const BUILD_MODE = process.env.NEXT_PUBLIC_BUILD_MODE as string
 const nanoid = customAlphabet('1234567890abcdefghijklmnopqrstuvwxyz', 8)
 
-const AssistantRecommend = dynamic(() => import('@/components/AssistantRecommend'))
+// const AssistantRecommend = dynamic(() => import('@/components/AssistantRecommend'))
 const Setting = dynamic(() => import('@/components/Setting'))
 const FileUploader = dynamic(() => import('@/components/FileUploader'))
 
@@ -599,52 +599,6 @@ export default function Home() {
           </Button>
         </div>
       </div>
-      {messageStore.messages.length === 0 && content === '' && messageStore.systemInstruction === '' ? (
-        <AssistantRecommend initAssistant={initAssistant} />
-      ) : (
-        <div className="flex min-h-full flex-1 grow flex-col justify-start">
-          {messageStore.systemInstruction !== '' ? (
-            <div className="p-4 pt-0">
-              <SystemInstruction prompt={messageStore.systemInstruction} onClear={() => initAssistant('')} />
-            </div>
-          ) : null}
-          {messageStore.messages.map((msg, idx) => (
-            <div
-              className="group text-slate-500 transition-colors last:text-slate-800 hover:text-slate-800 dark:last:text-slate-400 dark:hover:text-slate-400 max-sm:hover:bg-transparent"
-              key={msg.id}
-            >
-              <div className="flex gap-3 p-4 hover:bg-gray-50/80 dark:hover:bg-gray-900/80">
-                <MessageItem {...msg} onRegenerate={handleResubmit} />
-              </div>
-            </div>
-          ))}
-          {errorMessage !== '' ? (
-            <div className="group text-slate-500 transition-colors last:text-slate-800 hover:text-slate-800 dark:last:text-slate-400 dark:hover:text-slate-400 max-sm:hover:bg-transparent">
-              <div className="flex gap-3 p-4 hover:bg-gray-50/80 dark:hover:bg-gray-900/80">
-                <ErrorMessageItem content={errorMessage} onRegenerate={() => handleResubmit('error')} />
-              </div>
-            </div>
-          ) : null}
-          {content !== '' ? (
-            <div className="group text-slate-500 transition-colors last:text-slate-800 hover:text-slate-800 dark:last:text-slate-400 dark:hover:text-slate-400 max-sm:hover:bg-transparent">
-              <div className="flex gap-3 p-4 hover:bg-gray-50/80 dark:hover:bg-gray-900/80">
-                <MessageItem id="preview" role="user" parts={[{ text: content }]} />
-              </div>
-            </div>
-          ) : null}
-          {messageStore.messages.length > 0 ? (
-            <div className="my-2 flex h-4 justify-center text-xs text-slate-400 duration-300 dark:text-slate-600">
-              {/* <span className="mx-2 cursor-pointer hover:text-slate-500" onClick={() => handleResubmit()}>
-                {t('regenerateAnswer')}
-              </span>
-              <Separator orientation="vertical" /> */}
-              <span className="mx-2 cursor-pointer hover:text-slate-500" onClick={() => handleCleanMessage()}>
-                {t('clearChatContent')}
-              </span>
-            </div>
-          ) : null}
-        </div>
-      )}
       <div ref={scrollAreaBottomRef}></div>
       <div className="fixed bottom-0 flex w-full max-w-screen-md items-end gap-2 bg-background p-4 pb-8 max-sm:p-2 max-sm:pb-3 landscape:max-md:pb-4">
         {supportSpeechRecognition ? (

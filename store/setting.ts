@@ -79,10 +79,7 @@ export const useSettingStore = create<SettingStore>((set) => ({
       isProtected: !!isProtected,
       talkMode: ((await storage.getItem<string>('talkMode')) as Setting['talkMode']) || 'chat',
       maxHistoryLength: Number((await storage.getItem<string>('maxHistoryLength')) || '0'),
-      assistantIndexUrl:
-        (await storage.getItem<string>('assistantIndexUrl')) ||
-        ASSISTANT_INDEX_URL ||
-        'https://chat-agents.lobehub.com',
+      assistantIndexUrl: (await storage.getItem<string>('assistantIndexUrl')) || ASSISTANT_INDEX_URL || '',
       topP: (await storage.getItem<number>('topP')) ?? defaultModelConfig.topP,
       topK: (await storage.getItem<number>('topK')) ?? defaultModelConfig.topK,
       temperature: (await storage.getItem<number>('temperature')) ?? defaultModelConfig.temperature,
