@@ -60,7 +60,7 @@ export default function chat({
   const genAI = new GoogleGenerativeAI(apiKey)
   const modelParams: ModelParams = { model, generationConfig, safetySettings: getSafetySettings(safety) }
   if (systemInstruction) {
-    if (model.startsWith('gemini-1.5')) {
+    if (model.startsWith('gemini-2.0')) {
       modelParams.systemInstruction = systemInstruction
     } else {
       const systemInstructionMessages = [

@@ -57,7 +57,7 @@ function Setting({ open, hiddenTalkPanel, onClose }: SettingProps) {
     const { setModel } = useSettingStore.getState()
 
     let modelList: string[] = []
-    let defaultModel = 'gemini-1.5-flash-latest'
+    let defaultModel = 'gemini-2.0-flash'
     const defaultModelList: string[] = Object.values(Model)
     const userModels: string[] = GEMINI_MODEL_LIST ? GEMINI_MODEL_LIST.split(',') : []
 

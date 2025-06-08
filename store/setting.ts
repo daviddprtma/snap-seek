@@ -64,7 +64,7 @@ export const useSettingStore = create<SettingStore>((set) => ({
     const ttsLang = await storage.getItem<string>('ttsLang')
     const ttsVoice = await storage.getItem<string>('ttsVoice')
     const lang = (await storage.getItem<string>('lang')) || detectLanguage()
-    const model = (await storage.getItem<string>('model')) || 'gemini-1.5-flash-latest'
+    const model = (await storage.getItem<string>('model')) || 'gemini-2.0-flash'
     const defaultModelConfig = getDefaultModelConfig(model)
     const state: Setting = {
       password: (await storage.getItem<string>('password')) || '',
