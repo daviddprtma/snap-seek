@@ -2,7 +2,7 @@
 <br/>
 <div align="center">
 
-<h3 align="center">SnapSeek</h3>
+<h3 align="center">Winner of Nosu AI Hackathon(Devpost) 🎉 - SnapSeek</h3>
 <p align="center">
 A versatile visual search assistant bot to integrate text, image, and voice interactions.
 <br/>
@@ -12,6 +12,11 @@ A versatile visual search assistant bot to integrate text, image, and voice inte
 
 </p>
 </div>
+
+## Proof of my win project screenshot 
+![](https://github.com/daviddprtma/snap-seek/blob/7512d79db2092215affa28a543a6d99e634b1ce7/public/nosu%20template%20winner.png)
+![](https://github.com/daviddprtma/snap-seek/blob/7512d79db2092215affa28a543a6d99e634b1ce7/public/snap%20seek%20nosu%20winner.png)
+![](https://github.com/daviddprtma/snap-seek/blob/7512d79db2092215affa28a543a6d99e634b1ce7/public/email%20nosu%20winner%20snap%20seek.png)
 
 ## Why SnapSeek✅?
 
@@ -118,3 +123,4 @@ Make sure that you have installed Nodejs>=18 and Docker >=20
 Here's the video presentation of the SnapSeek: 
 <br> 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/05Od41FJGoo/0.jpg)](https://www.youtube.com/watch?v=05Od41FJGoo)
+
